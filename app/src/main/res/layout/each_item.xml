@@ -16,6 +16,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/headingImage"
+            android:scaleType="centerCrop"
             android:src="@drawable/news6"
             android:layout_margin="10dp"
             app:shapeAppearanceOverlay="@style/softCorner">

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="9dp"
+    android:id="@+id/cardItem">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"  >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/headingImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/news6"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/softCorner">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elon Musk's X takes another step to compete with LinkedIn, adds new job search feature"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/newscontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/news6"
+                android:textSize="20sp"
+                android:layout_margin="5dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
